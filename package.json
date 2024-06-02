@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "start": "nodemon script.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "serialport": "^9.2.8",
+    "node-fetch": "^3.3.2"
+  },
+  "name": "smartparking",
+  "version": "1.0.0",
+  "description": "\"project\"",
+  "main": "script.js",
+  "author": "Saumya Singh",
+  "license": "ISC"
+}

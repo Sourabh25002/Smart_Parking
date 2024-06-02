@@ -1,0 +1,57 @@
+.container {
+  margin-top: -10px;
+}
+
+.img-container {
+  display: flex;
+  align-items: flex-end; /* Move images to the bottom */
+  justify-content: center;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 400px; /* Adjust the container height as needed */
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  /* margin-top: 30%; */
+}
+
+#left-button,
+#right-button {
+  position: absolute;
+  top: 50%;
+  font-size: 2em;
+  color: #fff;
+  text-shadow: none;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for buttons */
+}
+
+#left-button {
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+#right-button {
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+.btn-book-slot {
+  display: block; /* Ensures the button takes up the full width */
+  margin: 0 auto; /* Centers the button horizontally */
+  font-size: 24px; /* Sets the font size to 24 pixels */
+  font-weight: bold; /* Makes the text bold */
+  padding: 10px 20px; /* Adds padding around the text */
+  border-radius: 5px; /* Adds rounded corners */
+  background-color: #FFA500; /* Sets the background color to orange */
+  color: #fff; /* Sets the text color to white */
+  border: none; /* Removes border */
+  cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
+.btn-book-slot:hover {
+  background-color: #FF7F00; /* Darker orange on hover */
+}

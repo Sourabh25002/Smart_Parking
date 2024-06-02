@@ -1,0 +1,84 @@
+/* Bookings container */
+.bookings-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading */
+.bookings-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Link button */
+.link-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.link-button:hover {
+  background-color: #0056b3;
+}
+
+/* Booking list */
+.booking-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Booking item */
+.booking-item {
+  border: 1px solid #4c0af3;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Send OTP button */
+.booking-item button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.booking-item button:hover {
+  background-color: #218838;
+}
+
+/* OTP input */
+.booking-item input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Submit OTP button */
+.booking-item button.submit-otp-button {
+  background-color: #007bff;
+}
+
+.booking-item button.submit-otp-button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message */
+.booking-item p.error-message {
+  color: #dc3545;
+  margin-top: 5px;
+}
+
+/* Send OTP button container */
+.booking-item > div {
+  margin-bottom: 10px;
+}

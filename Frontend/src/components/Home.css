@@ -1,0 +1,174 @@
+/* Home.css */
+
+.home-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Hide overflow initially */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar-left {
+  font-size: 20px;
+}
+
+.exit-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.exit-button:hover {
+  background-color: #d32f2f;
+}
+
+.slideshow-container {
+  width: 100%;
+  height: 50vh; /* Fixed height for the slideshow */
+  overflow: hidden; /* Hide overflow initially */
+  position: relative;
+}
+
+.slideshow {
+  display: flex;
+  height: 100%;
+  width: 100%; /* Make width full */
+  animation: slide 15s infinite;
+}
+
+.slide {
+  min-width: 100%;
+  transition: transform 1s;
+}
+
+.slide img {
+  width: 100%; /* Set width to 100% */
+  height: 100%; /* Set height to 100% */
+  object-fit: cover; /* Ensure entire image covers the container */
+}
+
+@keyframes slide {
+  0%, 33.33% {
+    transform: translateX(0%);
+  }
+  33.33%, 66.66% {
+    transform: translateX(-100%);
+  }
+  66.66%, 100% {
+    transform: translateX(-200%);
+  }
+}
+
+/* ParkingAreaDetails  */
+.area-details {
+  margin: 20px;
+}
+
+.slots-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slot {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
+}
+
+.slot.vacant {
+  background-color: #89f75e;
+}
+
+.slot.booked {
+  background-color: #e9f900;
+}
+
+.slot.occupied {
+  background-color: #f80505;
+}
+
+/* Add scrollbar when content exceeds the available space */
+.area-details {
+  max-height: 50vh; /* Limit height to 50% of the viewport height */
+  overflow-y: auto; /* Add vertical scrollbar when content exceeds available space */
+}
+
+
+/* ParkingAreaSelect.css */
+
+.parking-area {
+  margin-bottom: 20px;
+}
+
+.parking-area h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333; /* Change color as needed */
+}
+
+.parking-area select {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Change background color as needed */
+  color: #333; /* Change text color as needed */
+  font-size: 16px;
+}
+
+.parking-area select option {
+  font-size: 16px;
+  color: #333; /* Change text color as needed */
+}
+
+/* Specific styling for the "Book Slot" button */
+.area-details .book-slot-button {
+  background-color: #7c0aff; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+.area-details .book-slot-button:hover {
+  background-color: #45a049; /* Darker Green */
+}
+
+
+/* Specific styling for the "View My Bookings" button */
+.view-bookings-button {
+  background-color: #4c36f4; /* Red */
+  color: white;
+  border: none;
+  padding: 15px 30px; /* Increased padding for height */
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2rem; /* Increased font size */
+  height: 50px; /* Added height */
+}
+
+.view-bookings-button:hover {
+  background-color: #d32f2f; /* Darker Red */
+}
+
